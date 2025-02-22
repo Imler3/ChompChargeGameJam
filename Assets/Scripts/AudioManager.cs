@@ -55,6 +55,7 @@ public class AudioManager : MonoBehaviour
         if (isPlaying && !audioSource.isPlaying)
         {
             isPlaying = false;
+            audioSource.Stop();
         }
     }
 
