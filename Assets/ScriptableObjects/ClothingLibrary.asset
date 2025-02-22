@@ -16,23 +16,23 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 57f9f4e931d2f4f4cbcec988d16badc9, type: 3}
   - {fileID: 21300000, guid: acb0644e047be604aba25aacf4a96403, type: 3}
   accessoryLocations:
-  - {x: 0, y: 0}
-  - {x: 0, y: 0}
+  - {x: -2, y: 3}
+  - {x: -2, y: 4}
   topSprites:
   - {fileID: 21300000, guid: 57f9f4e931d2f4f4cbcec988d16badc9, type: 3}
   - {fileID: 21300000, guid: acb0644e047be604aba25aacf4a96403, type: 3}
   topLocations:
-  - {x: 0, y: 0}
-  - {x: 0, y: 0}
+  - {x: -2, y: 2}
+  - {x: -2, y: 1}
   bottomSprites:
   - {fileID: 21300000, guid: 57f9f4e931d2f4f4cbcec988d16badc9, type: 3}
   - {fileID: 21300000, guid: acb0644e047be604aba25aacf4a96403, type: 3}
   bottomLocations:
-  - {x: 0, y: 0}
-  - {x: 0, y: 0}
+  - {x: -2, y: 0.5}
+  - {x: -2, y: 0}
   shoeSprites:
   - {fileID: 21300000, guid: 57f9f4e931d2f4f4cbcec988d16badc9, type: 3}
   - {fileID: 21300000, guid: acb0644e047be604aba25aacf4a96403, type: 3}
   shoeLocations:
-  - {x: 0, y: 0}
-  - {x: 0, y: 0}
+  - {x: -2, y: -2}
+  - {x: -2, y: -1}

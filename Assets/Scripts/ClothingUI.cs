@@ -11,6 +11,8 @@ public class ClothingUI : MonoBehaviour
     [SerializeField] private Image img;
     private ClothingManager manager;
 
+    public ClothingSO.clothingCategory category;
+
     [Tooltip("Seconds to roll before settling")]
     [SerializeField] private float rollTime = 2.0f;
     [Tooltip("How fast to roll")]
@@ -33,7 +35,7 @@ public class ClothingUI : MonoBehaviour
 
     private void StartRollingAnimation(ClothingSO.clothingCategory category, int clothingIndex)
     {
-        StartCoroutine(rollClothing(category, clothingIndex));
+        if (category == this.category) StartCoroutine(rollClothing(category, clothingIndex));
     }
 
     private IEnumerator rollClothing(ClothingSO.clothingCategory category, int clothingIndex)
@@ -45,7 +47,7 @@ public class ClothingUI : MonoBehaviour
         {
             index = UnityEngine.Random.Range(0, manager.clothingLibraries.GetNumSprites(category));
             img.sprite = manager.clothingLibraries.GetSpriteAtIndex(category, index);
-            rollTime += Time.deltaTime;
+            timeInRoll += (1/rollSpeed);
             yield return new WaitForSeconds(1 / rollSpeed);
         }
         // finally, pick the correct one
