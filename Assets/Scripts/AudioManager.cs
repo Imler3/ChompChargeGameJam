@@ -18,6 +18,12 @@ public class AudioManager : MonoBehaviour
     [Tooltip("AudioSource, so the camera can hear")]
     [SerializeField] private AudioSource audioSource;
 
+    [Header("Objects to show/hide")]
+    [Tooltip("select system game object")]
+    [SerializeField] private GameObject selectSystem;
+    [Tooltip("music system game object")]
+    [SerializeField] private GameObject musicSystem;
+
     // invoked each time a beat occurs; noteManager listens to this
     public event Action OnBeat;
 
@@ -67,6 +73,8 @@ public class AudioManager : MonoBehaviour
         // change audioSource clip
         audioSource.clip = songLibrary.songs[currentSong].audioFile;
 
+        ChangeObjs();
+
         StartStopSong(true);
     }
 
@@ -82,6 +90,12 @@ public class AudioManager : MonoBehaviour
             isPlaying = false;
             audioSource.Pause();
         }
+    }
+
+    private void ChangeObjs()
+    {
+        selectSystem.SetActive(false);
+        musicSystem.SetActive(true);
     }
 
     // just invokes audioManager's OnBeat event whenever a beat's OnBeat event is invoked
