@@ -10,6 +10,7 @@ using UnityEngine.UIElements;
 [CreateAssetMenu(fileName = "ClothingLibrary", menuName = "ScriptableObjects/ClothingLibrary")]
 public class ClothingSO : ScriptableObject
 {
+    public Sprite baseModel;
     public enum clothingCategory
     {
         accessory,

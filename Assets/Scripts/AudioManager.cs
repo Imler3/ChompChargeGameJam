@@ -52,6 +52,10 @@ public class AudioManager : MonoBehaviour
 
             }
         }
+        if (isPlaying && !audioSource.isPlaying)
+        {
+            isPlaying = false;
+        }
     }
 
     public void SelectSong(int index)
