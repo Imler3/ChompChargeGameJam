@@ -7,6 +7,7 @@ TagManager:
   - Receptor
   - Manager
   - Note
+  - Meter
   layers:
   - Default
   - TransparentFX
@@ -49,4 +50,7 @@ TagManager:
     locked: 0
   - name: Notes
     uniqueID: 2228722013
+    locked: 0
+  - name: UI
+    uniqueID: 1563743677
     locked: 0
