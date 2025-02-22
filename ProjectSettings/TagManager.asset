@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Receptor
   - Manager
+  - Note
   layers:
   - Default
   - TransparentFX
