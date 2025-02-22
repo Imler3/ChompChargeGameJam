@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884870e95a3d86b4896bf47674153537, type: 3}
   m_Name: Beat1
   m_EditorClassIdentifier: 
-  rate: 0.25
+  rate: 0.5

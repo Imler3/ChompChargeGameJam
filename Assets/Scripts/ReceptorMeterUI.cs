@@ -30,7 +30,7 @@ public class ReceptorMeterUI : MonoBehaviour
     private void UpdateMeter(float score)
     {
         meter.fillAmount += (score / meterFillAmount);
-        if (meterFillAmount >= 1.0f)
+        if (meter.fillAmount >= 1.0f)
         {
             meter.fillAmount = 0.0f;    // reset
             OnMeterFull?.Invoke(category);  // invoke event = clothing manager listens
