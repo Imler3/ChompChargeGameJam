@@ -12,27 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837eaeb8c02180c4ab3694c7c4ab9e01, type: 3}
   m_Name: ClothingLibrary
   m_EditorClassIdentifier: 
+  baseModel: {fileID: 476640223, guid: 4f76b89ce20c41c419a1c66ee56eb163, type: 3}
   accessorySprites:
-  - {fileID: 21300000, guid: 57f9f4e931d2f4f4cbcec988d16badc9, type: 3}
-  - {fileID: 21300000, guid: acb0644e047be604aba25aacf4a96403, type: 3}
+  - {fileID: -429205748, guid: 2c96cd36fb319414182d6a8aca16115b, type: 3}
+  - {fileID: 128487640, guid: 4c18748fd5932914181a632a81bde537, type: 3}
   accessoryLocations:
-  - {x: -2, y: 3}
-  - {x: -2, y: 4}
+  - {x: -5.927, y: 1.537}
+  - {x: -5.89, y: 2.743}
   topSprites:
-  - {fileID: 21300000, guid: 57f9f4e931d2f4f4cbcec988d16badc9, type: 3}
+  - {fileID: -1386881776, guid: a459682e94956f248ad2b32eb6e35551, type: 3}
   - {fileID: 21300000, guid: acb0644e047be604aba25aacf4a96403, type: 3}
   topLocations:
-  - {x: -2, y: 2}
-  - {x: -2, y: 1}
+  - {x: -5.703, y: 1.739}
+  - {x: -5.66, y: 1.56}
   bottomSprites:
-  - {fileID: 21300000, guid: 57f9f4e931d2f4f4cbcec988d16badc9, type: 3}
+  - {fileID: 625774895, guid: e9048a9150a57424cabf4435f4415906, type: 3}
   - {fileID: 21300000, guid: acb0644e047be604aba25aacf4a96403, type: 3}
   bottomLocations:
-  - {x: -2, y: 0.5}
-  - {x: -2, y: 0}
+  - {x: -5.63, y: -0.42}
+  - {x: -5.54, y: -0.1}
   shoeSprites:
-  - {fileID: 21300000, guid: 57f9f4e931d2f4f4cbcec988d16badc9, type: 3}
+  - {fileID: 490597122, guid: 7c7bc8eace3e0564f8bb0f57f9cffacc, type: 3}
   - {fileID: 21300000, guid: acb0644e047be604aba25aacf4a96403, type: 3}
   shoeLocations:
-  - {x: -2, y: -2}
-  - {x: -2, y: -1}
+  - {x: -5.57, y: -4.036}
+  - {x: -5.54, y: -4.2}

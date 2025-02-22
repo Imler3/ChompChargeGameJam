@@ -20,13 +20,13 @@ public class ClothingSO : ScriptableObject
     }
 
     public List<Sprite> accessorySprites;
-    public List<Vector2> accessoryLocations;
+    public List<int> accessoryLocations;
     public List<Sprite> topSprites;
-    public List<Vector2> topLocations;
+    public List<int> topLocations;
     public List<Sprite> bottomSprites;
-    public List<Vector2> bottomLocations;
+    public List<int> bottomLocations;
     public List<Sprite> shoeSprites;
-    public List<Vector2> shoeLocations;
+    public List<int> shoeLocations;
 
     public Sprite GetSpriteAtIndex(clothingCategory category, int index)
     {
@@ -44,7 +44,7 @@ public class ClothingSO : ScriptableObject
         throw new Exception("category not valid");
     }
 
-    public Vector2 GetLocationAtindex(clothingCategory category, int index)
+    public int GetLocationAtindex(clothingCategory category, int index)
     {
         switch (category)
         {

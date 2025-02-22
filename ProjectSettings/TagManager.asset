@@ -54,3 +54,6 @@ TagManager:
   - name: UI
     uniqueID: 1563743677
     locked: 0
+  - name: Clothing
+    uniqueID: 2044270605
+    locked: 0

@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/AshtonTestScene.unity
-    guid: aaf791434e149964bb67a9653648ce43
+    path: Assets/Scenes/WelcomeScene.unity
+    guid: 9941eb7e9e8dc424ebf19fa5b12df1c0
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Game.unity
+    guid: b8d070df7747fb84ca766a631c91dc32
   m_configObjects: {}
