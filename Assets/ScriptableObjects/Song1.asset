@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Song1
   m_EditorClassIdentifier: 
   songName: Jazz Drums
-  difficulty: 1
+  difficulty: 2
   audioFile: {fileID: 8300000, guid: de0faa7819bdb0149b5acb3bca76742d, type: 3}
   bpm: 120
   beats:
