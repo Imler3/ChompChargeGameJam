@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 884870e95a3d86b4896bf47674153537, type: 3}
-  m_Name: Beat1
+  m_Script: {fileID: 11500000, guid: a49cad5ff34490949ae85f28b9dc40c8, type: 3}
+  m_Name: ScoreMultiplier
   m_EditorClassIdentifier: 
-  rate: 0.25
+  multipliers:
+  - 40
+  - 20
+  - 10
