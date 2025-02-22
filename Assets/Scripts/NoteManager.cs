@@ -2,18 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// handles spawning notes based on beat events from audio manager
 public class NoteManager : MonoBehaviour
 {
-    public GameObject prefabToSpawn;
-    public Transform[] spawnPoints;
-    public float thisBeatTempo;
-    private float spawnInterval;
+    [Tooltip("Positions to spawn the notes at; four of them")]
+    [SerializeField] private List<Transform> spawnPositions = new List<Transform>();
+    [SerializeField] public GameObject notePrefab;
 
     // Start is called before the first frame update
     void Start()
     {
-        spawnInterval = thisBeatTempo / 60f;
-        InvokeRepeating("SpawnPrefab", 0f, spawnInterval);
+        GetComponent<AudioManager>().OnBeat += SpawnNote;
     }
 
     // Update is called once per frame
@@ -56,4 +55,9 @@ public class NoteManager : MonoBehaviour
             
         }
     }
+    public void SpawnNote()
+    {
+        Instantiate(notePrefab, spawnPositions[Random.Range(0, spawnPositions.Count)].position, Quaternion.identity);
+    }
+
 }
