@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// handles spawning notes based on beat events from audio manager
 public class NoteManager : MonoBehaviour
 {
     [Tooltip("Positions to spawn the notes at; four of them")]

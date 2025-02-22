@@ -1,3 +1,7 @@
+// reference: https://youtu.be/gIjajeyjRfE?feature=shared by b3agz
+
+// characterizes the beat; can have different intervals
+
 using System;
 using UnityEngine;
 

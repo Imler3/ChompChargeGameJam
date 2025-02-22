@@ -1,3 +1,7 @@
+// reference: https://youtu.be/gIjajeyjRfE?feature=shared by b3agz
+
+// handles changing and playing songs and triggering beats
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
