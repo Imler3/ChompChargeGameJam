@@ -1273,6 +1273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 0}
+  category: 0
   rollTime: 2
   rollSpeed: 5
 --- !u!114 &949902428
@@ -1485,7 +1486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   receptor: {fileID: 472756569}
-  category: 0
+  category: 1
   meterFillAmount: 60
 --- !u!114 &1386241832
 MonoBehaviour:
@@ -1844,6 +1845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 0}
+  category: 2
   rollTime: 2
   rollSpeed: 5
 --- !u!114 &1571354900
@@ -2073,6 +2075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 0}
+  category: 3
   rollTime: 2
   rollSpeed: 5
 --- !u!114 &1730646129
@@ -2164,6 +2167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 0}
+  category: 1
   rollTime: 2
   rollSpeed: 5
 --- !u!114 &1735605015
