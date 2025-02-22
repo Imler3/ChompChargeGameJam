@@ -7,7 +7,7 @@ public class Pause_Menu : MonoBehaviour
 {
     public GameObject Canvas;
     public GameObject Camera;
-    public AudioSource audioSource;
+    public AudioManager manager;
     public bool Paused;
 
 
@@ -15,7 +15,7 @@ public class Pause_Menu : MonoBehaviour
 
     void Start()
     {
-        Canvas.gameObject.SetActive(false);
+        manager = GetComponent<AudioManager>();
     }
 
     void Update()
@@ -28,7 +28,7 @@ public class Pause_Menu : MonoBehaviour
                 Canvas.gameObject.SetActive(false);
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
-                audioSource.UnPause();
+                manager.StartStopSong(true);
                 Paused = false;
             }
             else
@@ -37,7 +37,7 @@ public class Pause_Menu : MonoBehaviour
                 Canvas.gameObject.SetActive(true);
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.Confined;
-                audioSource.Pause();
+                manager.StartStopSong(false);
                 Paused = true;
             }
         }
@@ -45,10 +45,11 @@ public class Pause_Menu : MonoBehaviour
     public void Resume()
     {
         Time.timeScale = 1.0f;
-        Canvas.gameObject.SetActive(false);
+       Canvas.gameObject.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        audioSource.UnPause();
+        manager.StartStopSong(true);
+        Paused = false;
     }
     public void Quit()
     {

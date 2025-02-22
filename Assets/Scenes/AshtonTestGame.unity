@@ -487,6 +487,9 @@ MonoBehaviour:
   songLibrary: {fileID: 11400000, guid: 56c640adb5e4cc74598b3a1d8c204b6d, type: 2}
   currentSong: 0
   audioSource: {fileID: 10544553}
+  selectSystem: {fileID: 0}
+  musicSystem: {fileID: 0}
+  isPlaying: 0
 --- !u!4 &224512642
 Transform:
   m_ObjectHideFlags: 0
@@ -1649,6 +1652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 0}
+  category: 0
   rollTime: 2
   rollSpeed: 5
 --- !u!114 &949902428
@@ -2500,6 +2504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 0}
+  category: 0
   rollTime: 2
   rollSpeed: 5
 --- !u!114 &1571354900
@@ -2729,6 +2734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 0}
+  category: 0
   rollTime: 2
   rollSpeed: 5
 --- !u!114 &1730646129
@@ -2820,6 +2826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 0}
+  category: 0
   rollTime: 2
   rollSpeed: 5
 --- !u!114 &1735605015
