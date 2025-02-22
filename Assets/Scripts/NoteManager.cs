@@ -57,7 +57,9 @@ public class NoteManager : MonoBehaviour
     }
     public void SpawnNote()
     {
-        Instantiate(notePrefab, spawnPositions[Random.Range(0, spawnPositions.Count)].position, Quaternion.identity);
+        int indexPos = Random.Range(0, spawnPositions.Count);
+        GameObject note = Instantiate(notePrefab, spawnPositions[indexPos].position, Quaternion.identity);
+        note.transform.GetChild(0).transform.Rotate(0.0f, 0.0f, indexPos * 90.0f, Space.Self);
     }
 
 }

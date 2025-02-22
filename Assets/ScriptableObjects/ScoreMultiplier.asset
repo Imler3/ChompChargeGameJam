@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ScoreMultiplier
   m_EditorClassIdentifier: 
   multipliers:
-  - 40
+  - 30
   - 20
   - 10
+  - 5

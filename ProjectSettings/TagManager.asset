@@ -45,11 +45,20 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 4035120039
+    locked: 0
   - name: Receptors
     uniqueID: 1821344469
     locked: 0
   - name: Notes
     uniqueID: 2228722013
+    locked: 0
+  - name: Model
+    uniqueID: 2286287367
+    locked: 0
+  - name: Clothing
+    uniqueID: 2044270605
     locked: 0
   - name: UI
     uniqueID: 1563743677

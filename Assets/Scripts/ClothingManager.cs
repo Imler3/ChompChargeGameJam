@@ -8,12 +8,18 @@ public class ClothingManager : MonoBehaviour
 {
     public ClothingSO clothingLibraries;
     [SerializeField] private List<GameObject> meters;
+    [SerializeField] private SpriteRenderer baseModel;
+
+    [SerializeField] private List<GameObject> locations;
 
     public event Action<ClothingSO.clothingCategory, int> OnClothingPicked;
 
     // Start is called before the first frame update
     void Start()
     {
+        // load base model
+        baseModel.sprite = clothingLibraries.baseModel;
+
         meters = new List<GameObject>(GameObject.FindGameObjectsWithTag("Meter"));
         foreach (GameObject meter in meters)
         {
@@ -33,15 +39,9 @@ public class ClothingManager : MonoBehaviour
     // called by clothingUI after clothing is revealed
     public void SpawnClothing(ClothingSO.clothingCategory category, int clothingIndex)
     {
-        // spawn clothing - create new game object
-        GameObject clothing = new GameObject();
-        // set position
-        clothing.transform.position = new Vector3(
-        clothingLibraries.GetLocationAtindex(category, clothingIndex).x,
-            clothingLibraries.GetLocationAtindex(category, clothingIndex).y,
-            0.0f);
-        // set sprite
-        clothing.AddComponent<SpriteRenderer>().sprite = clothingLibraries.GetSpriteAtIndex(category, clothingIndex);
+        // change the sprite of the location
+        locations[clothingLibraries.GetLocationAtindex(category, clothingIndex)].GetComponent<SpriteRenderer>().sprite =
+            clothingLibraries.GetSpriteAtIndex(category, clothingIndex);
     }
 
 }
