@@ -13,7 +13,7 @@ public class Pause_Menu : MonoBehaviour
 
     
 
-    void start()
+    void Start()
     {
         Canvas.gameObject.SetActive(false);
     }
@@ -28,7 +28,7 @@ public class Pause_Menu : MonoBehaviour
                 Canvas.gameObject.SetActive(false);
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
-                audioSource.Play(0);
+                audioSource.UnPause();
                 Paused = false;
             }
             else
@@ -48,6 +48,11 @@ public class Pause_Menu : MonoBehaviour
         Canvas.gameObject.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        GetComponent<AudioSource>();
+        audioSource.UnPause();
+    }
+    public void Quit()
+    {
+
+        Application.Quit();
     }
 }
