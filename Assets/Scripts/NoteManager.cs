@@ -24,16 +24,16 @@ public class NoteManager : MonoBehaviour
     private void SpawnPrefab()
     {
         // If there are available spawn points, choose one randomly
-        if (spawnPoints.Length > 0)
+        if (spawnPositions.Count > 0)
         {
-            int randomIndex = Random.Range(0, spawnPoints.Length);
-            Transform spawnPoint = spawnPoints[randomIndex];
+            int randomIndex = Random.Range(0, spawnPositions.Count);
+            Transform spawnPoint = spawnPositions[randomIndex];
 
             // Instantiate the prefab at the chosen spawn point
-            GameObject spawnedObject = Instantiate(prefabToSpawn, spawnPoint.position, Quaternion.identity);
+            GameObject spawnedObject = Instantiate(notePrefab, spawnPoint.position, Quaternion.identity);
 
-            ScrollNote scrollScript = spawnedObject.GetComponent<ScrollNote>();
-            scrollScript.beatTempo = thisBeatTempo;
+            //ScrollNote scrollScript = spawnedObject.GetComponent<ScrollNote>();
+            //scrollScript.beatTempo = thisBeatTempo;
 
             NoteObject nOScript = spawnedObject.GetComponent<NoteObject>();
             if (randomIndex == 0)
