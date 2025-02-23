@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3db0a41ea3b1948ada494aacb8cbc1, type: 3}
   m_Name: Song1
   m_EditorClassIdentifier: 
-  songName: Jazz Drums
+  songName: Fashion Show
   difficulty: 2
-  audioFile: {fileID: 8300000, guid: de0faa7819bdb0149b5acb3bca76742d, type: 3}
+  audioFile: {fileID: 8300000, guid: a703f4952630ac04683edfc663193012, type: 3}
   bpm: 120
   beats:
   - {fileID: 11400000, guid: f4353c54109988b4594f8d88c27954a0, type: 2}

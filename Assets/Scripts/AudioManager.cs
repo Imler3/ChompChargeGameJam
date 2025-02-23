@@ -24,6 +24,8 @@ public class AudioManager : MonoBehaviour
     [Tooltip("music system game object")]
     [SerializeField] private GameObject musicSystem;
 
+    public Pause_Menu pauseManu;
+
     // invoked each time a beat occurs; noteManager listens to this
     public event Action OnBeat;
 
@@ -80,7 +82,10 @@ public class AudioManager : MonoBehaviour
 
         ChangeObjs();
 
-        StartStopSong(true);
+        pauseManu.enabled = true;
+
+        isPlaying = true;
+        audioSource.Play();
     }
 
     public void StartStopSong(bool isStart)

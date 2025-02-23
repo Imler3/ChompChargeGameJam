@@ -27,7 +27,7 @@ public class Pause_Menu : MonoBehaviour
                 Time.timeScale = 1.0f;
                 Canvas.gameObject.SetActive(false);
                 Cursor.visible = false;
-                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.lockState = CursorLockMode.Confined;
                 manager.StartStopSong(true);
                 Paused = false;
             }
