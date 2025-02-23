@@ -8,6 +8,7 @@ TagManager:
   - Manager
   - Note
   - Meter
+  - Music
   layers:
   - Default
   - TransparentFX
