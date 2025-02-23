@@ -11,7 +11,7 @@ public class ScoreDuplicateToPause : MonoBehaviour
     void Update()
     {
         scoreText = GetComponent<TextMeshProUGUI>();
-        scoreText.text = Mathf.FloorToInt(scoreManager.score).ToString();
+        scoreText.text = "Score: " + Mathf.FloorToInt(scoreManager.score).ToString();
     }
 
 }

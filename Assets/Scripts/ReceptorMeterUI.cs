@@ -13,6 +13,7 @@ public class ReceptorMeterUI : MonoBehaviour
     [SerializeField] private float meterFillAmount = 60.0f;
 
     private Image meter;
+    public bool done;
 
     public event Action<ClothingSO.clothingCategory> OnMeterFull;
 
@@ -20,6 +21,7 @@ public class ReceptorMeterUI : MonoBehaviour
     void Start()
     {
         meter = GetComponent<Image>();
+        done = false;
         meter.type = Image.Type.Filled;
         meter.fillAmount = 0.0f;
 
@@ -32,8 +34,12 @@ public class ReceptorMeterUI : MonoBehaviour
         meter.fillAmount += (score / meterFillAmount);
         if (meter.fillAmount >= 1.0f)
         {
-            meter.fillAmount = 0.0f;    // reset
-            OnMeterFull?.Invoke(category);  // invoke event = clothing manager listens
+            meter.fillAmount = 1.0f;    // reset
+            if (!done)
+            {
+                OnMeterFull?.Invoke(category);  // invoke event = clothing manager listens
+                done = true;
+            }
         }
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class EndGame : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class EndGame : MonoBehaviour
     public SpriteRenderer spriteRendererTop;
     public SpriteRenderer spriteRendererBottom;
     public SpriteRenderer spriteRendererShoes;
-   
+    public TextMeshProUGUI winloseText;
 
     void Start()
     {
@@ -44,8 +45,12 @@ public class EndGame : MonoBehaviour
                 spriteRendererBottom.sortingOrder = 7;
                 spriteRendererShoes.sortingOrder = 7;
                 pause_Menu.enabled = false;
-
             }
         }
+    }
+
+    public void handleAllDone()
+    {
+        winloseText.text = "Great Job!";
     }
 }
