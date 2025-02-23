@@ -16,6 +16,9 @@ public class Receptor : MonoBehaviour
 
     public event Action<float> OnHit;
 
+    public event Action OnPerfectHit;
+
+
     public enum codes
     {
         up,
@@ -92,6 +95,8 @@ public class Receptor : MonoBehaviour
 
         // send the score to the score manager
         OnHit?.Invoke(scoreMultiplier.multipliers[index]);
+
+        if(index == 0) { OnPerfectHit?.Invoke(); }
 
         Destroy(note);
     }
