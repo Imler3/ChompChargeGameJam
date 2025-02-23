@@ -23,7 +23,7 @@ public class SongSelectorUI : MonoBehaviour
             GameObject newButton = Instantiate(buttonPrefab, this.transform);
             newButton.GetComponent<RectTransform>().anchoredPosition = new Vector2(
                 newButton.GetComponent<RectTransform>().anchoredPosition.x,
-                newButton.GetComponent<RectTransform>().anchoredPosition.y - (i * 2.2f));
+                newButton.GetComponent<RectTransform>().anchoredPosition.y - (i * 2f));
 
             newButton.name = i.ToString();
             newButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text =

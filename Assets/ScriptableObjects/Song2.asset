@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songName: Rock Drums
   difficulty: 1
-  audioFile: {fileID: 8300000, guid: 38eb7ef6667f024409be57a3aa774807, type: 3}
+  audioFile: {fileID: 8300000, guid: 6ab26692220842840a70ca80065c4984, type: 3}
   bpm: 120
   beats:
   - {fileID: 11400000, guid: f4353c54109988b4594f8d88c27954a0, type: 2}
