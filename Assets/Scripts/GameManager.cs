@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     private List<GameObject> meters;
     public UnityEvent onAllDone;
+    
 
     // Start is called before the first frame update
     void Start()
