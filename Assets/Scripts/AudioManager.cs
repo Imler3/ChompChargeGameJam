@@ -25,6 +25,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private GameObject musicSystem;
 
     public Pause_Menu pauseManu;
+    public EndGame endGame;
 
     // invoked each time a beat occurs; noteManager listens to this
     public event Action OnBeat;
@@ -83,6 +84,7 @@ public class AudioManager : MonoBehaviour
         ChangeObjs();
 
         pauseManu.enabled = true;
+        endGame.enabled = true;
 
         isPlaying = true;
         audioSource.Play();
