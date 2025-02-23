@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Song3
   m_EditorClassIdentifier: 
   songName: Pop Princess
-  difficulty: 3
+  difficulty: 4
   audioFile: {fileID: 8300000, guid: 929e962634f2d484986b4799c4b4fe93, type: 3}
   bpm: 180
   beats:
-  - {fileID: 11400000, guid: f4353c54109988b4594f8d88c27954a0, type: 2}
-  - {fileID: 11400000, guid: 1ec3cd413a7ec8742ae9268c8795372d, type: 2}
+  - {fileID: 11400000, guid: 14014a565945f6843a35b44dfd8b3fea, type: 2}

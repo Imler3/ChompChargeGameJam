@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Song1
   m_EditorClassIdentifier: 
   songName: Fashion Show
-  difficulty: 2
+  difficulty: 3
   audioFile: {fileID: 8300000, guid: a703f4952630ac04683edfc663193012, type: 3}
   bpm: 120
   beats:
