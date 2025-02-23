@@ -18,3 +18,4 @@ MonoBehaviour:
   bpm: 242
   beats:
   - {fileID: 11400000, guid: f4353c54109988b4594f8d88c27954a0, type: 2}
+  - {fileID: 11400000, guid: 1ec3cd413a7ec8742ae9268c8795372d, type: 2}
