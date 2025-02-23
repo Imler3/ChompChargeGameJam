@@ -23,6 +23,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private GameObject selectSystem;
     [Tooltip("music system game object")]
     [SerializeField] private GameObject musicSystem;
+    [SerializeField] private GameManager gameManager;
 
     public Pause_Menu pauseManu;
     public EndGame endGame;
