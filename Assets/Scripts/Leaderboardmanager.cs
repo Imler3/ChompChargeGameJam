@@ -61,20 +61,20 @@ public class LeaderboardManager : MonoBehaviour
                 {
                     newNames[i] = "YOU!!";
                     newScores[i] = score;
-                    newDates[i] = DateTime.Now.Date.ToString();
+                    newDates[i] = DateTime.Now.ToString();
                     continue;
                 }
                 else if (i < indexToInsert)
                 {
                     newNames[i] = leaderboard.names[i];
                     newScores[i] = leaderboard.scores[i];
-                    newDates[i] = leaderboard.names[i];
+                    newDates[i] = leaderboard.dates[i];
                 }
                 else
                 {
                     newNames[i] = leaderboard.names[i - 1];
                     newScores[i] = leaderboard.scores[i - 1];
-                    newDates[i] = leaderboard.names[i - 1];
+                    newDates[i] = leaderboard.dates[i - 1];
                 }
             }
             // set the leaderboard
