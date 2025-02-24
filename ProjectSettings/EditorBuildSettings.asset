@@ -14,10 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: b8d070df7747fb84ca766a631c91dc32
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Credits.unity
     guid: 7525e269df097ee448896226d2c71211
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AshtonTest.unity
     guid: ba5b5af78c2d34b439acc0eb107b0172
   m_configObjects: {}

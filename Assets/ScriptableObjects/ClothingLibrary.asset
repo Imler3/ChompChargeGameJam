@@ -22,17 +22,15 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a459682e94956f248ad2b32eb6e35551, type: 3}
   - {fileID: 21300000, guid: dd295c20ce9e20542b9ff364a7d0135f, type: 3}
   - {fileID: 21300000, guid: 6b5beaa4897a4844f8582a0aaa0fda56, type: 3}
-  - {fileID: 21300000, guid: 2c96cd36fb319414182d6a8aca16115b, type: 3}
-  topLocations: 02000000020000000200000001000000
+  topLocations: 020000000200000002000000
   bottomSprites:
   - {fileID: 21300000, guid: 5a5a766f325d72245855d6f8827406fd, type: 3}
   - {fileID: 21300000, guid: a13d7bc464b9d5543b819cb744c26349, type: 3}
   - {fileID: 21300000, guid: 5512390e2aef44641b8b8a4b6c2b651d, type: 3}
-  - {fileID: 21300000, guid: bd4a2df3265802a4f9521fbae3b55a8e, type: 3}
+  - {fileID: 21300000, guid: e9048a9150a57424cabf4435f4415906, type: 3}
   bottomLocations: 03000000030000000300000001000000
   shoeSprites:
   - {fileID: 21300000, guid: 7c7bc8eace3e0564f8bb0f57f9cffacc, type: 3}
   - {fileID: 21300000, guid: ec406e217db041f4287b1bdc97cd1672, type: 3}
   - {fileID: 21300000, guid: 2887c248ca9be1349aa5587f109ee95b, type: 3}
-  - {fileID: 21300000, guid: a2ade08e8b87a614faa6dffecba47b1d, type: 3}
-  shoeLocations: 04000000040000000400000001000000
+  shoeLocations: 040000000400000004000000
