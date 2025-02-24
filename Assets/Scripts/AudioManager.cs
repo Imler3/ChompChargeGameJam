@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour
     public AudioLibrarySO songLibrary;
 
     [Tooltip("Index of current song in the songLibrary")]
-    [SerializeField] private int currentSong = 0;
+    [SerializeField] public int currentSong = 0;
 
     [Tooltip("AudioSource, so the camera can hear")]
     [SerializeField] private AudioSource audioSource;
@@ -29,6 +29,7 @@ public class AudioManager : MonoBehaviour
 
     // invoked each time a beat occurs; noteManager listens to this
     public event Action OnBeat;
+    public event Action OnSongEnd;
 
     public bool isPlaying = false;
 
@@ -59,6 +60,7 @@ public class AudioManager : MonoBehaviour
         {
             isPlaying = false;
             audioSource.Stop();
+            OnSongEnd?.Invoke();
         }
     }
 

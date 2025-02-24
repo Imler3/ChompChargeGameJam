@@ -9,7 +9,7 @@ public class StreakUI : MonoBehaviour
     // prefab for the text
     [SerializeField] private GameObject streakTextPrefab;
     [SerializeField] private List<Transform> spawnLocations;
-    [SerializeField] private float destroyTime = 0.5f;
+    [SerializeField] private float destroyTime = 0.3f;
 
     // Start is called before the first frame update
     void Start()
